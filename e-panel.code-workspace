@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"name": "E-Panel",
+			"path": "G:/My Drive/Development/Arduino/E-Panel"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"*.py": "python",
+			"*.example": "c"
+		}
+	}
+}
