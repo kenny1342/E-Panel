@@ -3,6 +3,7 @@
 Arduino project to display real-time energy data from a Shelly EM device on a TFT display connected to an ESP32 module.<br />
 It uses the Shelly Cloud API, make sure device is cloud-connected (it is by default). <br />
 Shelly API returns JSON formatted data, we parse it using ArduinoJson library.<br />
+The JSON contains *alot* of information from the devices, the whole JSON object is printed to serial output.<br />
 
 I made this as a starting point for an electrical info display for my own smart-house setup.<br />
 This is just my personal hobby project, but maybe it's useful for someone else too.
@@ -10,6 +11,7 @@ This is just my personal hobby project, but maybe it's useful for someone else t
 (I have left the very first test sketch in extras/ folder, for quick test using Arduino IDE)
 
 <img src="epanel_ttgo.png" alt="Logo" width="400" height="220">
+<img src="epanel_ttgo2.png" alt="Logo" width="400" height="220">
 
 ### Components used
 
