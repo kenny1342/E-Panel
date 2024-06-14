@@ -361,13 +361,9 @@ void updateDisplay() {
         tft.printf("%uW", EMData.power);
         LCD_state.fgcolor = FG_COLOR;
         tft.setTextColor(LCD_state.fgcolor, LCD_state.bgcolor);
-        char buf[10];
-        dtostrf(EMData.voltage, 5, 1, buf);
-        tft.printf(" %sV\n", buf);
-
-        dtostrf(EMData.amperage, 4, 1, buf);
+        tft.printf(" %d.%01d V\n", (int)EMData.voltage, (int)(EMData.voltage*10)%10 );
         tft.setCursor(0, 68);
-        tft.printf("%sA\n", buf);
+        tft.printf("%d.%01dA  ", (int)EMData.amperage, (int)(EMData.amperage*10)%10 );
       break;
       case P2:
         tft.setCursor(0, 0);

@@ -1,7 +1,7 @@
 #include <cstdint>
 #include <TFT_eSPI.h>
 
-#define FIRMWARE_VERSION "1.07"
+#define FIRMWARE_VERSION "1.08"
 #define IGNORE_SSL_CERT 1   // should be 0 in a production environment, see ca_cert.h
 #define POWER_LIMIT 1000    // Watt limit for text to turn RED
 #define FG_COLOR TFT_GREEN  // Default foreground color
