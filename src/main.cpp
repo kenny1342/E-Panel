@@ -428,7 +428,9 @@ void showErrorMessage(const char *text, uint16_t duration_ms) {
   tft.printf("%s", text);  
   tft.setTextWrap(false);
   delay(duration_ms);
+  // Restore colors
   LCD_state.fgcolor = FG_COLOR;
   LCD_state.bgcolor = BG_COLOR;
-
+  tft.setTextColor(LCD_state.fgcolor, LCD_state.bgcolor);
+  tft.fillScreen(LCD_state.bgcolor);
 }
