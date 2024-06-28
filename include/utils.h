@@ -3,7 +3,7 @@
 
 #include <cstdint>
 
-enum TIME_STRING_FORMATS { TFMT_LONG, TFMT_DATETIME, TFMT_HOURS };
+enum TIME_STRING_FORMATS { TFMT_LONG, TFMT_DATETIME, TFMT_UPTIME };
 char * SecondsToDateTimeString(uint32_t seconds, uint8_t format);
 
 #endif

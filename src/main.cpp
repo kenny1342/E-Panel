@@ -402,7 +402,7 @@ void updateDisplay() {
 
     switch(CurrLastLine) {
       case 0: tft.printf("ID: %u (v%s)  \n",  (uint16_t)(ESP.getEfuseMac()>>32), FIRMWARE_VERSION); break;
-      case 1: tft.printf("Uptime: %s\n", SecondsToDateTimeString(millis()/1000, TFMT_HOURS)); break;
+      case 1: tft.printf("Up: %s\n", SecondsToDateTimeString(millis()/1000, TFMT_UPTIME)); break;
       case 2: tft.printf("RSSI:%d SSID:%s \n", WiFi.RSSI(), WiFi.SSID().c_str()); break;
       case 3: tft.printf("Free mem: %u B\n", ESP.getFreeHeap()); break;
       case 4: tft.printf("IP: %s\n", WiFi.localIP().toString().c_str()); break;
